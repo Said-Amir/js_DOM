@@ -47,4 +47,3 @@ let myLi = document.querySelectorAll("li")
 myLi.forEach(e => {
     console.log(e)
 });
-;
