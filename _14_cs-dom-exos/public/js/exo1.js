@@ -28,8 +28,7 @@ on.addEventListener('click', () => {
 })
 
 // Exo 3
-let titre = document.querySelectorAll('h2');
-let titres = [...titre];
+let titres = document.querySelectorAll('h2');
 let ul = false;
 
 document.addEventListener('keypress', (e) => {
@@ -41,11 +40,9 @@ document.addEventListener('keypress', (e) => {
                 element.innerText = `${index+1}. ${element.innerText}`
             });
             ul++;
-            console.log(compteur);
-            
         } else if(ul == true) {
             titres.forEach((element) => {
-                element.innerText = element.innerText.substr(2);
+                element.innerText = element.innerText.substring(2);
             });
             ul=false;
         }
